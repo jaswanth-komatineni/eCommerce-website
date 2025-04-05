@@ -2,7 +2,7 @@
 
 A complete, responsive eCommerce web application built using **PHP**, **MySQL**, and **HTML/CSS**. This project includes full user functionality, shopping cart system, and a secured admin dashboard for managing products.
 
-> ✅ Deployed Live: [jaswanth.infinityfreeapp.com](https://jaswanth.infinityfreeapp.com)
+> ✅ Deployed Live: [jaswanth.infinityfreeapp.com](http://jaswanth.infinityfreeapp.com/)
 
 ---
 

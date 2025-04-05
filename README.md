@@ -1,105 +1,124 @@
-# 🛒 PHP eCommerce Website
-
-A complete, responsive eCommerce web application built using **PHP**, **MySQL**, and **HTML/CSS**. This project includes full user functionality, shopping cart system, and a secured admin dashboard for managing products.
-
-> ✅ Deployed Live: [jaswanth.infinityfreeapp.com](http://jaswanth.infinityfreeapp.com/)
 
 ---
 
-## 🚀 Features
 
-### 👥 User Features
-- User registration & login with session handling
-- Browse products with image, description, and pricing
-- Add to cart (auto quantity management)
-- Update cart quantity or remove items
-- Checkout & order confirmation page
+```markdown
+# 🛒 PHP eCommerce Website
 
-### 🧑‍💼 Admin Features
-- Secure admin login
-- Add new products with image upload
-- Edit and delete existing products
-- View/manage product list via dashboard
+A complete, responsive **eCommerce web application** built with **PHP**, **MySQL**, and **HTML/CSS**.  
+It includes full user functionality, a shopping cart system, and a secure admin dashboard for managing products.
+
+> 🔗 **Live Demo**: [jaswanth.infinityfreeapp.com](http://jaswanth.infinityfreeapp.com/)
+
+---
+
+## 🚀 Key Features
+
+### 👤 User Panel
+- 📝 User registration & login
+- 🛍️ View products with details and images
+- ➕ Add to cart with quantity control
+- 🧺 Manage cart (update/remove)
+- ✅ Place order (simulated checkout)
+
+### 🔐 Admin Panel
+- 🔑 Admin login authentication
+- ➕ Add new products (with image upload)
+- ✏️ Edit existing products
+- 🗑️ Delete products
+- 📋 View/manage full product list
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology    | Description                      |
-|---------------|----------------------------------|
-| `PHP`         | Core server-side scripting       |
-| `MySQL`       | Relational database management   |
-| `HTML/CSS`    | Frontend structure and styling   |
-| `Tailwind`    | (Optional) for utility-first CSS |
-| `Git + GitHub`| Version control & collaboration  |
-| `InfinityFree`| Free hosting platform            |
+| Tool / Language | Purpose                              |
+|-----------------|--------------------------------------|
+| **PHP**         | Backend logic                        |
+| **MySQL**       | Database management                  |
+| **HTML/CSS**    | Frontend layout and design           |
+| **Tailwind CSS**| (Optional) Responsive styling        |
+| **InfinityFree**| Free hosting and MySQL DB support    |
+| **Git + GitHub**| Version control and project hosting  |
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Folder Structure
 
+```bash
 htdocs/
-├── index.php
+├── index.php                  # Homepage (product catalog)
 ├── includes/
-│   └── db.php
+│   └── db.php                 # Database connection config
+│
 ├── pages/
-│   ├── login.php
-│   ├── register.php
-│   ├── cart.php
+│   ├── login.php              # User login
+│   ├── register.php           # User registration
+│   ├── cart.php               # User cart page
+│   ├── buy.php                # Order confirmation
+│   └── logout.php             # User logout
+│
 ├── admin/
-│   ├── login.php
-│   ├── dashboard.php
-│   ├── manage_products.php
-│   └── add_product.php
-├── images/
-│   └── (all product images)
+│   ├── login.php              # Admin login
+│   ├── dashboard.php          # Admin dashboard
+│   ├── add_product.php        # Add products
+│   ├── edit_product.php       # Edit products
+│   ├── delete_product.php     # Delete products
+│   └── manage_products.php    # Product list for admin
+│
+├── images/                    # Product images
 ├── css/
-│   └── style.css (optional)
-└── test_db.php (for initial testing only)
+│   └── style.css              # Optional custom styles
+├── ecommerce.sql              # MySQL database export
+└── test_db.php                # DB connection test
+```
+
+---
+
+## 🧪 Running the Project Locally
+
+### ✅ 1. Clone the Repository
+```bash
+git clone https://github.com/jaswanth-komatineni/eCommerce-website.git
+```
+
+### ✅ 2. Move the project to your server directory:
+- **MAMP**: `/Applications/MAMP/htdocs/eCommerce-website`
+- **XAMPP**: `C:/xampp/htdocs/eCommerce-website`
+
+### ✅ 3. Import the Database
+- Open `http://localhost/phpmyadmin`
+- Create a database named: `ecommerce`
+- Click **Import** → choose `ecommerce.sql` from the project folder
+
+### ✅ 4. Configure Database Connection
+Edit the file `includes/db.php` to match your local MySQL settings:
+```php
+$host = 'localhost';
+$dbname = 'ecommerce';
+$user = 'root';
+$password = 'root'; // or your password
+```
+
+---
+
+## 🌐 Deployment Info
+
+- **Hosting Provider**: [InfinityFree](https://infinityfree.net)
+- **Live URL**: [jaswanth.infinityfreeapp.com](http://jaswanth.infinityfreeapp.com)
+- **Database Host**: `sql113.infinityfree.com`
 
 
 ---
 
-## 🧪 How to Run Locally
+## 👨‍💻 Author
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/jaswanth-komatineni/eCommerce-website.git
+**Jaswanth Komatineni**  
+📧 [jaswanthkomatineni@gmail.com](mailto:jaswanthkomatineni@gmail.com)  
+🔗 [GitHub Profile](https://github.com/jaswanth-komatineni)
 
-2.Move to your server's root directory:
+---
 
-For MAMP: /Applications/MAMP/htdocs/
+## 📄 License
 
-For XAMPP: C:/xampp/htdocs/
-
-3.Import the database:
-
-Open localhost/phpmyadmin
-
-Create a new database: ecommerce
-
-Import ecommerce.sql from the project folder
-
-4.Update your local database connection in:
-
-includes/db.php
-
-🌐 Live Deployment
-Hosting Provider: InfinityFree
-
-Live URL: jaswanth.infinityfreeapp.com
-
-Database Host: sql113.infinityfree.com
-
-Project hosted using MAMP locally, deployed with free PHP hosting
-
-📸 Screenshots (Optional)
-Add homepage, cart, and admin dashboard screenshots here if desired
-
-👨‍💻 Author
-Jaswanth Komatineni
-📧 jaswanthkomatineni@gmail.com
-🔗 GitHub Profile
-
-📝 License
-This project is open-source and available under the MIT License.
+This project is licensed under the **MIT License**.  

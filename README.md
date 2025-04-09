@@ -42,31 +42,33 @@ It supports complete **user shopping experience**, including product browsing, c
 
 ## 📁 Project Structure
 
+```text
 ecommerce/
 ├── admin/
-│   ├── add_product.php
-│   ├── dashboard.php
-│   ├── edit_product.php
-│   ├── delete_product.php
-│   ├── login.php
-│   └── logout.php
+│ ├── add_product.php
+│ ├── dashboard.php
+│ ├── edit_product.php
+│ ├── delete_product.php
+│ ├── login.php
+│ └── logout.php
 ├── css/
-│   └── style.css
+│ └── style.css
 ├── includes/
-│   └── db.php
-│   └── header.php
+│ ├── db.php
+│ └── header.php
 ├── images/
-│   └── (product images)
+│ └── (product images)
 ├── pages/
-│   ├── cart.php
-│   ├── buy.php
-│   ├── my_orders.php
-│   ├── login.php
-│   ├── register.php
-│   └── order_success.php
+│ ├── cart.php
+│ ├── buy.php
+│ ├── my_orders.php
+│ ├── login.php
+│ ├── register.php
+│ └── order_success.php
 ├── index.php
 ├── test_db.php
 └── ecommerce.sql
+```
 
 ---
 

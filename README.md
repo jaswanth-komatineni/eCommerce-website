@@ -11,7 +11,7 @@ It supports complete **user shopping experience**, including product browsing, c
 ## 🚀 Features
 
 ### 👤 User Module
-- User registration & secure login
+- User registration & ssssssecure login
 - Add/remove items to cart
 - Quantity updates & real-time cart totals
 - Place orders with dynamic order summary
